@@ -1,1 +1,25 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css">
+
+<body style="background-color: #5693f5;">
+    <form id="frm1">
+        <button class="button-style"
+         type="button" onclick="myFunction()">Enter</button>
+        <input class="input-style" type="text" id="inpt1">
+    </form>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("inpt1").value;
+            document.getElementById("output").innerHTML = x;
+        }
+    </script>
+    <div style="display: flex;">
+        <div style="margin: auto;  font-size: 400px; animation: color-change 1s infinite;">
+            <p id="output"></p>
+        </div>
+    </div>
+</body>
+
+</html>
